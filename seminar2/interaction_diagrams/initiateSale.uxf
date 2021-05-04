@@ -1,0 +1,9 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>146</x><y>470</y><w>60</w><h>30</h></coordinates><panel_attributes>:View
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>366</x><y>470</y><w>80</w><h>30</h></coordinates><panel_attributes>:Controller
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>480</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>206</x><y>450</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1: initiateSale() : void</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>626</x><y>470</y><w>80</w><h>30</h></coordinates><panel_attributes>sale :Sale
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>436</x><y>480</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>346</x><y>450</y><w>430</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1.1 : sale = &lt;&lt;create&gt;&gt; Sale(customerDB : CustomerDB, printer : Printer) : Sale</panel_attributes><additional_attributes>270;20;150;20</additional_attributes></element></diagram>

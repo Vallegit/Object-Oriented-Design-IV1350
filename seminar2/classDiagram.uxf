@@ -1,0 +1,67 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>103</x><y>110</y><w>290</w><h>110</h></coordinates><panel_attributes>view
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>103</x><y>250</y><w>630</w><h>180</h></coordinates><panel_attributes>controller
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>103</x><y>490</y><w>410</w><h>270</h></coordinates><panel_attributes>model
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>843</x><y>250</y><w>260</w><h>540</h></coordinates><panel_attributes>integration
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>573</x><y>90</y><w>250</w><h>110</h></coordinates><panel_attributes>startup
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>123</x><y>290</y><w>590</w><h>120</h></coordinates><panel_attributes>Controller
+--
+--
++ &lt;&lt;create&gt;&gt;Controller(view : View, printer : Printer, customerDB : CustomerDB, eas : EAS, eis : EIS): Controller
++ initiateSale(): void
++ addItem(itemIdentifier, quantity): Sale
++ endSale(): int
++ discountRequest(customerId): int
++ payment(amount): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>123</x><y>150</y><w>250</w><h>50</h></coordinates><panel_attributes>View
+--
++ &lt;&lt;create&gt;&gt;View(controller : Controller): View
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>183</x><y>190</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>123</x><y>530</y><w>370</w><h>120</h></coordinates><panel_attributes>Sale
+--
+- totalPrice : Int
+--
++ &lt;&lt;create&gt;&gt; Sale(customerDB : CustomerDB, printer : Printer): Sale
++ addItem(itemIdentifier, quantity): int
++ endSale(): int
++ payment(amount): int
++ applyDiscount(customerId): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>400</y><w>100</w><h>180</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;160;80;160;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>183</x><y>670</y><w>310</w><h>70</h></coordinates><panel_attributes>Receipt
+--
+--
++ &lt;&lt;create&gt;&gt; Receipt(sale : Sale, printer : Printer): Receipt
++ print() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>590</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;80;100;80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>863</x><y>290</y><w>170</w><h>120</h></coordinates><panel_attributes>Item
+--
+- identifer : Int
+- description : String
+- price : Int
+- vatRate : Int
+--
++ &lt;&lt;create&gt;&gt; Item(itemId): Item
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>703</x><y>330</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>863</x><y>430</y><w>220</w><h>60</h></coordinates><panel_attributes>CustomerDB
+--
+--
++ &lt;&lt;create&gt;&gt;CustomerDB(): CustomerDB
++ checkDiscount(customerId): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>460</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>380;10;100;10;100;120;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>863</x><y>510</y><w>220</w><h>100</h></coordinates><panel_attributes>EIS
+--
+--
++ &lt;&lt;create&gt;&gt;EIS(): EIS
++ getItem(itemId): Item
++ completedSale(Sale): void
++ checkValid(itemId): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>863</x><y>630</y><w>220</w><h>60</h></coordinates><panel_attributes>EAS
+--
+--
++ &lt;&lt;create&gt;&gt;EAS(): EAS
++ completedSale(Sale): void
++ checkValid(itemId): boolean
++ getItem(itemId): Item</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>773</x><y>330</y><w>110</w><h>240</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>90;220;10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>773</x><y>540</y><w>110</w><h>150</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>90;130;10;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>863</x><y>710</y><w>220</w><h>60</h></coordinates><panel_attributes>Printer
+--
+--
++ &lt;&lt;create&gt;&gt;Printer(): Printer
++ print(Receipt): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>700</y><w>400</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>380;40;80;40;80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>593</x><y>130</y><w>210</w><h>50</h></coordinates><panel_attributes>Main
+--
++ main(args : Strgin[]): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>363</x><y>150</y><w>250</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>170</y><w>140</w><h>140</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;10;60;120;60;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>663</x><y>220</y><w>490</w><h>550</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>420;530;470;530;470;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1073</x><y>460</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1073</x><y>540</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1073</x><y>660</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>793</x><y>340</y><w>90</w><h>260</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>70;10;10;10;10;240;70;240</additional_attributes></element></diagram>

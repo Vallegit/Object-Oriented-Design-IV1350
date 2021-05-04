@@ -1,0 +1,9 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>281</x><y>480</y><w>60</w><h>30</h></coordinates><panel_attributes>:View
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>331</x><y>490</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>491</x><y>480</y><w>80</w><h>30</h></coordinates><panel_attributes>:Controller
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>490</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>741</x><y>480</y><w>80</w><h>30</h></coordinates><panel_attributes>sale :Sale
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>565</x><y>450</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1.1 : totalPrice = endSale() : int</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>335</x><y>450</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1: totalPrice = endSale() : int</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element></diagram>

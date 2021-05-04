@@ -1,0 +1,104 @@
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 1
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 2
+INPUT: 0
+
+----- SALE INFO -----
+banana: 1x 
+Total Price: 1337
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 3
+INPUT: 1
+INPUT: 1000
+
+----- SALE INFO -----
+banana: 1x 
+toilet paper: 1000x 
+Total Price: 3337
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 4
+
+----------
+TOTAL PRICE: 3337
+----------
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 5
+INPUT: 100
+
+----------
+TOTAL PRICE: 1668
+----------
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 6
+INPUT: 2000
+
+Printing Receipt...
+EIS completing sale
+EAS completing sale
+
+----------
+CHANGE: 332
+----------
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 7
