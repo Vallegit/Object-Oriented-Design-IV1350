@@ -1,3 +1,4 @@
+
 package model;
 import integration.CustomerDB;
 import integration.Item;
@@ -66,12 +67,13 @@ public class Sale {
     }
 
     /**
-     * Prints the receit (this sale object) and completes sale
+     * Prints the receit and completes sale
      * @param amount - amount received from customer
      * @return - amount of change to return to customer
      */
     public int payment(int amount){
-        printer.print(this);
+        Receipt receipt = new Receipt(this, printer);
+        receipt.print();
         return amount-totalPrice;
     }
 

@@ -11,42 +11,16 @@ public class Item {
 
     /**
      * Creates a new instance of an item.
-     * @param itemIdentifier - Number that corresponds to a certain item.
+     * @param identifier - Number that corresponds to a certain item.
+     * @param description - String that represents item description.
+     * @param price - Number that represents item price.
+     * @param vatRate - Number representing the VAT rate of an item in percent, 0 - 100.
      */
-    public Item(int itemIdentifier) {
-        this.identifier = itemIdentifier;
-
-        switch(identifier) {
-            case 0:
-                description = "banana";
-                price = 1337;
-                vatRate = 0;
-                break;
-            
-            case 1:
-                description = "toilet paper";
-                price = 1;
-                vatRate = 100;
-                break;
-
-            case 2:
-                description = "hot dog";
-                price = 2;
-                vatRate = 99;
-                break;
-
-            case 3:
-                description = "gold bar";
-                price = 5;
-                vatRate = 0;
-                break;
-
-            case 4:
-                description = "snickers";
-                price = 1000000;
-                vatRate = 25;
-                break;
-        }
+    public Item(int identifier, String description, int price, int vatRate) {
+        this.identifier = identifier;
+        this.description = description;
+        this.price = price;
+        this.vatRate = vatRate;
     }
 
     /**

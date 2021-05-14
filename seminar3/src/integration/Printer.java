@@ -1,5 +1,4 @@
 package integration;
-import model.Sale;
 
 /**
  * Represents a printer
@@ -17,7 +16,7 @@ public class Printer {
      * Prints that the printer is working to represent a real printer
      * @param sale - sale to be printed (if this was real)
      */
-    public void print(Sale sale) {
+    public void print(String text) {
         System.out.println("Printing Receipt...");
     }
 }

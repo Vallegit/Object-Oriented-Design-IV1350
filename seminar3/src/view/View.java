@@ -63,4 +63,48 @@ public class View {
     public void printChange(int change) {
         System.out.print("\n----------\nCHANGE: " + change + "\n----------\n");
     }
+
+    public void run() {
+        boolean running = true;
+
+        while(running){
+            this.printMenu();
+            int input = this.nextInt();
+            int id, quantity, totalPrice, change;
+
+            switch(input) {
+                case 1:
+                    controller.initiateSale();
+                    break;
+                case 2:
+                    id = this.nextInt();
+                    controller.addItem(id);
+                    this.printSale();
+                    break;
+                case 3:
+                    id = this.nextInt();
+                    quantity = this.nextInt();
+                    controller.addItem(id, quantity);
+                    this.printSale();
+                    break;
+                case 4:
+                    totalPrice = controller.endSale();
+                    this.printTotalPrice(totalPrice);
+                    break;
+                case 5:
+                    id = this.nextInt();
+                    totalPrice = controller.discountRequest(id);
+                    this.printTotalPrice(totalPrice);
+                    break;
+                case 6: 
+                    quantity = this.nextInt();
+                    change = controller.payment(quantity);
+                    this.printChange(change);
+                    break;
+                case 7:
+                    running = false;
+                    break;
+            }
+        }
+    }
 }

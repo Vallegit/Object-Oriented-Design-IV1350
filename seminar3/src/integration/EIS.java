@@ -20,7 +20,18 @@ public class EIS {
      * @return Item object cointaining the data of a certain item
      */
     public Item getItem(int itemIdentifier) {
-        return new Item(itemIdentifier);
+        switch(itemIdentifier) {
+            case 0:
+                return new Item(0, "banana", 1337, 0);
+            case 1:
+                return new Item(1, "toilet paper", 1, 100);
+            case 2:
+                return new Item(2, "hot dog", 2, 99);
+            case 3:
+                return new Item(3, "gold bar", 5, 0);
+            default:
+                return new Item(4, "snickers", 1000000, 25);
+        }
     }
 
     /**
