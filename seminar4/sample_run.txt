@@ -1,0 +1,150 @@
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 1
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+
+INPUT: 2
+INPUT: 2
+
+----- SALE INFO -----
+hot dog: 1x 
+Total Price: 3
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+
+INPUT: 3
+INPUT: 1
+INPUT: 10
+
+----- SALE INFO -----
+hot dog: 1x 
+toilet paper: 10x 
+Total Price: 23
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 2 
+INPUT: 42069
+
+--------
+BEGIN LOG
+LOG ENTRY | Database can not be reached | 2021-05-18T17:42:21.459656
+END LOG
+--------
+
+
+--------
+BEGIN USER ERROR
+Internal error
+END USER ERROR
+--------
+
+
+----- SALE INFO -----
+hot dog: 1x 
+toilet paper: 10x 
+Total Price: 23
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 2
+INPUT: 9
+
+--------
+BEGIN USER ERROR
+The item with identifier 9 does not exist!
+END USER ERROR
+--------
+
+
+----- SALE INFO -----
+hot dog: 1x 
+toilet paper: 10x 
+Total Price: 23
+----- SALE INFO -----
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 4
+
+----------
+TOTAL PRICE: 23
+----------
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 6
+INPUT: 40
+
+Printing Receipt...
+Total Revenue: 23 pesos
+EIS completing sale
+EAS completing sale
+
+----------
+CHANGE: 17
+----------
+
+
+1. Initiate Sale
+2. Add item
+3. Add item with quantity
+4. End Sale
+5. Discount Request
+6. Payment
+7. Shutdown
+
+INPUT: 7
